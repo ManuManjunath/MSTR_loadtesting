@@ -34,6 +34,6 @@ RUN chmod 777 /etc/loadtest/chromedriver; \
 # copy load script
 COPY ./OIDC_Merch_RunRep.py /etc/loadtest
 
-CMD python3.6 /etc/loadtest/OIDC_Merch_RunRep.py && tail -f /dev/null
+CMD python3.6 /etc/loadtest/LoadTest.py && tail -f /dev/null
 Target
 Target
