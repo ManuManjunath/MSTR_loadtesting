@@ -1,0 +1,13 @@
+version: "3"
+networks:
+  ltnet:
+services:
+  Load1:
+    image: docker.enterprise.com/microstrategy/loadtest:1.2
+    deploy:
+      replicas: 250
+    volumes:
+      - /microstrategy/LoadTesting:/etc/loadtest/logs
+    networks:
+      - ltnet
+ 
